@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Site Generator - Ultra v9.9.13</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body class="light-theme">
+    <div id="dynamicBg" class="bg-animation"></div>
+    <div class="top-controls">
+        <button id="themeToggle" class="ui-control-btn">
+            <span id="themeIcon">🌙</span> <span id="ui-theme-text">Mode Sombre</span>
+        </button>
+        
+        <button id="resetBtn" class="ui-control-btn reset-btn">
+            <span class="reset-icon">🔄</span> <span id="ui-reset-text"></span>
+        </button>
+
+        <div class="ui-select-wrapper">
+            <span class="spinning-globe">🌐</span>
+            <select id="uiLangSelect" class="ui-select-box"></select>
+        </div>
+    </div>
+    <div class="generator-card">
+        <header>
+            <h1 id="ui-title">Générateur Quantum</h1>
+            <p id="ui-subtitle">L'IA à votre service.</p>
+        </header>
+        <form id="siteForm" novalidate>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="businessName" id="ui-label-name" class="dynamic-color-text">Nom Entreprise *</label>
+                    <input type="text" id="businessName" class="round-input h-fix" required>
+                    <div class="error-msg" id="err-businessName"></div>
+                </div>
+                <div class="form-group">
+                    <label for="profileSelect" id="ui-label-profile" class="dynamic-color-text">Métier *</label>
+                    <select id="profileSelect" class="round-input h-fix"></select>
+                    <div class="error-msg" id="err-profileSelect"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="siteLangSelect" id="ui-label-site-lang" class="dynamic-color-text">Langue Site *</label>
+                    <select id="siteLangSelect" class="round-input h-fix"></select>
+                    <div class="error-msg" id="err-siteLangSelect"></div>
+                </div>
+                <div class="form-group">
+                    <label id="ui-label-color" class="dynamic-color-text">Couleur *</label>
+                    <div id="colorPalette" class="color-palette h-fix"></div>
+                    <input type="hidden" id="primaryColor" value="#2563eb">
+                </div>
+            </div>
+            <div class="form-row triple-grid">
+                <div class="form-group">
+                    <label for="email" id="ui-label-email" class="dynamic-color-text">Email *</label>
+                    <input type="email" id="email" class="round-input h-fix" required>
+                    <div class="error-msg" id="err-email"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone" id="ui-label-phone" class="dynamic-color-text">Téléphone *</label>
+                    <div class="phone-row">
+                        <select id="countryCode" class="country-select round-input h-fix"></select>
+                        <input type="tel" id="phone" class="round-input h-fix" required>
+                    </div>
+                    <div class="error-msg" id="err-phone"></div>
+                </div>
+            </div>
+            <button type="submit" class="generate-btn large-btn full-width-btn" id="ui-btn-generate">
+                <span class="rocket">🚀</span> <span id="ui-text-gen">Générer (.zip)</span>
+            </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

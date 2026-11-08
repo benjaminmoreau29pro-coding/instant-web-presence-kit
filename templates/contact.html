@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BUSINESS_NAME}} | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="{{THEME_CLASS}}">
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">{{BUSINESS_NAME}}</div>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">À Propos</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-hero page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Discutons de votre projet. Nous vous répondrons rapidement.</p>
+        </div>
+    </section>
+
+    <section class="section-content contact-page-content">
+        <div class="container contact-layout">
+            
+            <div class="contact-form-wrapper">
+                <h2>Envoyez-nous un message</h2>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Votre Nom" required>
+                    <input type="email" name="email" placeholder="Votre Email" required>
+                    <textarea name="message" placeholder="Votre Message" rows="5" required></textarea>
+                    <button type="submit" class="cta-button">Envoyer le message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-wrapper">
+                <h2>Information de Contact</h2>
+                <p><strong>Email :</strong> <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+                <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+                <p><strong>Adresse :</strong> 123 Rue du Projet, 75001 Paris</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{BUSINESS_NAME}} - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
