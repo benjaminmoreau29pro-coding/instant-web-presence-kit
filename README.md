@@ -31,8 +31,6 @@ Aucune installation complexe ni serveur backend requis ! Le projet s'exécute di
 
 Clonez le dépôt sur votre machine :
 
-Bash
-git clone https://github.com/votre-nom-utilisateur/quantum-site-generator.git
 Ouvrez le fichier index.html dans votre navigateur web préféré.
 
 📄 Licence
